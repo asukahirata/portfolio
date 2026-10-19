@@ -1,12 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ポートフォリオ</title>
-  </head>
-  <body>
-    <h1>こんにちは</h1>
-    <p>ここにコンテンツを追加してください。</p>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Webコーダー / Webデザイナーのポートフォリオ。Webサイトの実装・デザイン・運用の実績を紹介します。">
+  <meta name="theme-color" content="#f7f7f7">
+  <title>ASUKA | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="ASUKA ポートフォリオ トップ">ASUKA<span class="logo-dot">.</span></a>
+      <nav class="nav" aria-label="メインナビゲーション">
+        <a href="#about">About</a>
+        <a href="#works">Works</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <p class="eyebrow">WEB CODER / WEB DESIGNER</p>
+        <h1 id="hero-title">デザインを理解し、<br>丁寧に<span class="underline">つくる。</span></h1>
+        <p class="hero-lead">Webサイトのコーディングを中心に、デザインから実装・運用まで。<br class="pc-only">伝わりやすく、使いやすいWebサイトを目指しています。</p>
+        <a class="text-link" href="#works">制作実績を見る <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-label" aria-hidden="true">PORTFOLIO / 2026</div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container section-layout">
+        <div class="section-head"><p class="section-index">01 / ABOUT</p><h2 id="about-title">わたしについて<span class="period">.</span></h2></div>
+        <div class="section-content about-content">
+          <p class="large-copy">デザインの意図をくみ取り、<br>細部まで丁寧に実装します。</p>
+          <p>Webコーダー兼Webデザイナーとして、Webサイトの新規制作・改修・運用に携わっています。HTML / CSS / JavaScriptを使ったフロントエンド実装を中心に、WordPressやStudioでの制作、LP・バナーのデザインにも対応しています。</p>
+          <p>見た目の再現だけでなく、レスポンシブ対応や操作のしやすさ、アクセシビリティも大切にしています。</p>
+          <!-- TODO: 公開前に経験年数や得意分野を実際の内容に調整してください。 -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="works" aria-labelledby="works-title">
+      <div class="container">
+        <div class="section-layout section-layout--head">
+          <div class="section-head"><p class="section-index">02 / WORKS</p><h2 id="works-title">制作実績<span class="period">.</span></h2></div>
+          <p class="section-intro">これまで携わった制作の一部です。<br>担当した範囲が伝わるようにまとめています。</p>
+        </div>
+        <div class="work-grid">
+          <!-- サムネイルは assets/work-01.jpg などを用意し、下の .work-thumb に img を追加してください。 -->
+          <article class="work-card">
+            <div class="work-thumb work-thumb--01"><span>01</span><small>WEBSITE / CODING</small></div>
+            <div class="work-meta"><span>WEB SITE</span><span>01</span></div>
+            <h3>不動産Webサイト制作</h3>
+            <p>レスポンシブ対応、スクロール演出、WordPress実装などを担当。</p>
+            <div class="tag-list"><span>HTML / SCSS</span><span>JavaScript</span><span>WordPress</span></div>
+          </article>
+          <article class="work-card">
+            <div class="work-thumb work-thumb--02"><span>02</span><small>WEBSITE / MAINTENANCE</small></div>
+            <div class="work-meta"><span>WEB SITE</span><span>02</span></div>
+            <h3>コーポレートサイト運用</h3>
+            <p>日本語・英語サイトのコンテンツ更新、テンプレート改修を担当。</p>
+            <div class="tag-list"><span>HTML / SCSS</span><span>Nunjucks</span><span>運用・保守</span></div>
+          </article>
+          <article class="work-card">
+            <div class="work-thumb work-thumb--03"><span>03</span><small>LANDING PAGE / DESIGN</small></div>
+            <div class="work-meta"><span>LANDING PAGE</span><span>03</span></div>
+            <h3>化粧品関連LP・バナー</h3>
+            <p>ランディングページや広告バナーのデザイン制作を担当。</p>
+            <div class="tag-list"><span>Figma</span><span>Photoshop</span><span>Design</span></div>
+          </article>
+          <article class="work-card">
+            <div class="work-thumb work-thumb--04"><span>04</span><small>WEBSITE / CMS</small></div>
+            <div class="work-meta"><span>WEB SITE</span><span>04</span></div>
+            <h3>CMSサイト制作・改修</h3>
+            <p>CMS設定、UIパーツ実装、スマートフォン対応などを担当。</p>
+            <div class="tag-list"><span>Studio</span><span>CMS</span><span>UI実装</span></div>
+          </article>
+        </div>
+        <p class="works-note">※ 実績名・担当範囲は公開用の仮表記です。守秘義務・掲載許可を確認のうえ差し替えてください。</p>
+      </div>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container section-layout">
+        <div class="section-head"><p class="section-index">03 / SKILLS</p><h2 id="skills-title">できること<span class="period">.</span></h2></div>
+        <div class="section-content skill-groups">
+          <div class="skill-group"><h3>CODING</h3><p>HTML / CSS / SCSS / JavaScript / jQuery / WordPress / Nunjucks / Git</p></div>
+          <div class="skill-group"><h3>DESIGN</h3><p>Figma / Photoshop / Illustrator / Webサイトデザイン / LP / バナー</p></div>
+          <div class="skill-group"><h3>OTHER</h3><p>Studio / レスポンシブ対応 / アクセシビリティへの配慮 / サイト更新・保守</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container section-layout">
+        <div class="section-head"><p class="section-index">04 / CONTACT</p><h2 id="contact-title">お問い合わせ<span class="period">.</span></h2></div>
+        <div class="section-content">
+          <p class="large-copy">お仕事のご相談など、<br>お気軽にご連絡ください。</p>
+          <p>Webサイトのコーディング・改修・デザインなどのご相談をお待ちしています。</p>
+          <!-- TODO: hello@example.com をご自身の公開用メールアドレスに変更してください。 -->
+          <a class="contact-button" href="mailto:hello@example.com?subject=Web%E5%88%B6%E4%BD%9C%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87">メールを送る <span aria-hidden="true">↗</span></a>
+          <p class="contact-note">※ 公開前にメールアドレスを変更してください。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="logo" href="#top">ASUKA<span class="logo-dot">.</span></a><small>© <span id="year">2026</span> ASUKA</small><a href="#top" class="back-top">Back to top ↑</a></div></footer>
+</body>
 </html>
