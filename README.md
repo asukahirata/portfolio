@@ -1,22 +1,15 @@
-# ASUKA Portfolio
+# ASUKA HIRATA Portfolio
 
-HTML / CSS / JavaScript だけで動く、1ページ完結のシンプルなポートフォリオです。ビルドツール不要。
+Webコーダー・Webデザイナーとして活動するASUKA HIRATAのポートフォリオです。WebサイトやLPのコーディング、WordPressのカスタマイズ、既存サイトの改修・運用、Webデザインなど、対応している業務を紹介しています。
 
-## 構成
-- index.html：サイトの内容（About / Works / Skills / Contact）
-- style.css：デザイン・レスポンシブ対応
-- script.js：フッターの年号更新
-- assets/：スクリーンショット等を入れるフォルダ
+## サイトの内容
 
-## 使い方
-1. `index.html` をブラウザで開く。
-2. 実績名、仕事内容、プロフィールを自身の実際の内容に書き換える。
-3. `hello@example.com` を公開用メールアドレスに変更する。
-4. 画像を入れる場合は `assets/work-01.jpg` などを保存し、該当する `.work-thumb` の中身を `<img src="assets/work-01.jpg" alt="制作サイトのスクリーンショット">` に変更する。画像全面にしたい場合はCSSに `.work-thumb img{width:100%;height:100%;object-fit:cover}` を追加する。
-5. 実績の掲載許可、守秘義務、クライアント名、素材の利用条件を確認してから公開する。
+- **About** — プロフィールと制作で大切にしていること
+- **Works** — 制作事例と担当範囲
+- **Skills** — 使用技術・ツールと対応できる業務
+- **Services** — ご依頼いただける業務と稼働条件
+- **Contact** — お仕事のご相談窓口
 
-## 色や幅の変更
-`style.css` 冒頭の `:root` 内でカラー、コンテンツ最大幅（`--inner:1080px`）、左右余白（`--side`）を調整できます。
+## 使用技術
 
-## 公開
-GitHub Pages / Netlify / レンタルサーバーなどに、そのままアップロードできます。
+HTML / CSS / JavaScriptで構成した、レスポンシブ対応の1ページサイトです。ローカルで確認するには、ビルドや依存関係のインストールなしで `index.html` をブラウザで開けます。
