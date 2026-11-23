@@ -66,14 +66,12 @@
   font-weight: 600;
 }
 
-.work-card > p,
-.work-duties {
+.work-card > p {
   color: #555;
   font-size: 15px;
   line-height: 1.85;
+  margin-bottom: 16px;
 }
-
-.work-card > p { margin-bottom: 16px; }
 
 .work-card h4 {
   margin: 0 0 6px;
@@ -81,9 +79,12 @@
   line-height: 1.5;
 }
 
-.work-duties {
-  margin: 0 0 16px;
-  padding-inline-start: 1.4em;
+.work-card .work-scope {
+  font-size: 14px;
+}
+
+.services-contact {
+  margin-top: 24px;
 }
 
 .tag-list {
